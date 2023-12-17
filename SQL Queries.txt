@@ -1,0 +1,7 @@
+SELECT * FROM Student
+
+SELECT StudentId, Name, City FROM Student WHERE Student.City = 'Kandy'
+
+UPDATE Student SET City = 'Galle' WHERE StudentId = 4
+
+SELECT * FROM Student JOIN Course ON Course.CourseId = Student.CourseId
